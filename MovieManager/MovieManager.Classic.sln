@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager", "MovieManager\MovieManager.csproj", "{FCDCF6D1-0498-4D72-B1AA-C5D14659B662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.CommonModel", "MovieManager.CommonModel\MovieManager.CommonModel.csproj", "{B36D371B-1676-4426-BB7D-BCAA9118A30E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.ContextModel", "MovieManager.ContextModel\MovieManager.ContextModel.csproj", "{F96ADD94-AA33-40BF-B4AF-07F02666669E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.Core", "MovieManager.Core\MovieManager.Core.csproj", "{43E445F0-E036-405E-A5A0-FE47AE44D02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.Interaction", "MovieManager.Interaction\MovieManager.Interaction.csproj", "{DC0299F4-21B6-4140-9E2A-844080479DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.StructureModel", "MovieManager.StructureModel\MovieManager.StructureModel.csproj", "{5D894ECF-E63E-45CD-BFB5-FD01E0C75597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.Core.Tests", "MovieManager.Core.Tests01\MovieManager.Core.Tests.csproj", "{52E6836C-96B2-4503-8AA7-2CD2328D9FB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCDCF6D1-0498-4D72-B1AA-C5D14659B662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDCF6D1-0498-4D72-B1AA-C5D14659B662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDCF6D1-0498-4D72-B1AA-C5D14659B662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDCF6D1-0498-4D72-B1AA-C5D14659B662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B36D371B-1676-4426-BB7D-BCAA9118A30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36D371B-1676-4426-BB7D-BCAA9118A30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36D371B-1676-4426-BB7D-BCAA9118A30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36D371B-1676-4426-BB7D-BCAA9118A30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96ADD94-AA33-40BF-B4AF-07F02666669E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96ADD94-AA33-40BF-B4AF-07F02666669E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96ADD94-AA33-40BF-B4AF-07F02666669E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96ADD94-AA33-40BF-B4AF-07F02666669E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E445F0-E036-405E-A5A0-FE47AE44D02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E445F0-E036-405E-A5A0-FE47AE44D02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E445F0-E036-405E-A5A0-FE47AE44D02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E445F0-E036-405E-A5A0-FE47AE44D02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0299F4-21B6-4140-9E2A-844080479DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0299F4-21B6-4140-9E2A-844080479DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0299F4-21B6-4140-9E2A-844080479DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0299F4-21B6-4140-9E2A-844080479DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D894ECF-E63E-45CD-BFB5-FD01E0C75597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D894ECF-E63E-45CD-BFB5-FD01E0C75597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D894ECF-E63E-45CD-BFB5-FD01E0C75597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D894ECF-E63E-45CD-BFB5-FD01E0C75597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E6836C-96B2-4503-8AA7-2CD2328D9FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E6836C-96B2-4503-8AA7-2CD2328D9FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E6836C-96B2-4503-8AA7-2CD2328D9FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E6836C-96B2-4503-8AA7-2CD2328D9FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MovieManager\\MovieManager.csproj
+		SccProjectName1 = MovieManager
+		SccLocalPath1 = MovieManager
+		SccProjectUniqueName2 = MovieManager.CommonModel\\MovieManager.CommonModel.csproj
+		SccProjectName2 = MovieManager.CommonModel
+		SccLocalPath2 = MovieManager.CommonModel
+		SccProjectUniqueName3 = MovieManager.ContextModel\\MovieManager.ContextModel.csproj
+		SccProjectName3 = MovieManager.ContextModel
+		SccLocalPath3 = MovieManager.ContextModel
+		SccProjectUniqueName4 = MovieManager.Core\\MovieManager.Core.csproj
+		SccProjectName4 = MovieManager.Core
+		SccLocalPath4 = MovieManager.Core
+		SccProjectUniqueName5 = MovieManager.Interaction\\MovieManager.Interaction.csproj
+		SccProjectName5 = MovieManager.Interaction
+		SccLocalPath5 = MovieManager.Interaction
+		SccProjectUniqueName6 = MovieManager.StructureModel\\MovieManager.StructureModel.csproj
+		SccProjectName6 = MovieManager.StructureModel
+		SccLocalPath6 = MovieManager.StructureModel
+		SccProjectUniqueName7 = MovieManager.Core.Tests01\\MovieManager.Core.Tests.csproj
+		SccProjectName7 = MovieManager.Core.Tests01
+		SccLocalPath7 = MovieManager.Core.Tests01
+	EndGlobalSection
+EndGlobal

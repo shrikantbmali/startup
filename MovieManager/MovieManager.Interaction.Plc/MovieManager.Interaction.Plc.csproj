@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5B9F148-9745-476B-8FA6-14E35D6800F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MovieManager.Interaction</RootNamespace>
+    <AssemblyName>MovieManager.Interaction.Plc</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveFolderVM.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="Extensions\VMLocatorExtension.cs" />
+    <Compile Include="IAddRemoveFolderVM.cs" />
+    <Compile Include="IApp.cs" />
+    <Compile Include="IFirstTimeViewModel.cs" />
+    <Compile Include="ILoadable.cs" />
+    <Compile Include="IMainVM.cs" />
+    <Compile Include="InteractionModule.cs" />
+    <Compile Include="MainVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusVM.cs" />
+    <Compile Include="StructureModel.Decors\MediaItemDecor.cs" />
+    <Compile Include="UnityDependantVMLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\System\System.Common.Plc\System.Common.Plc.csproj">
+      <Project>{db232f94-bbdc-4d49-b2aa-879ab20e9c63}</Project>
+      <Name>System.Common.Plc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Utilities\System\System.Infrastructure.Plc\System.Infrastructure.Plc.csproj">
+      <Project>{5bc835d2-e7b5-4055-b59c-8cdeb2b50b67}</Project>
+      <Name>System.Infrastructure.Plc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Utilities\System\System.Mvvm.Plc\System.Mvvm.Plc.csproj">
+      <Project>{07b88abd-b20f-40ff-8bbc-6288e298e1c9}</Project>
+      <Name>System.Mvvm.Plc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieManager.Core.Plc\MovieManager.Core.Plc.csproj">
+      <Project>{409c6d94-1fd6-4d94-aa08-a96971897c39}</Project>
+      <Name>MovieManager.Core.Plc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieManager.StructureModel.Pcl\MovieManager.StructureModel.Pcl.csproj">
+      <Project>{35e9ff0e-26ab-4699-9fc6-5a473c16c667}</Project>
+      <Name>MovieManager.StructureModel.Pcl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\portable-net45+wp80+win8+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

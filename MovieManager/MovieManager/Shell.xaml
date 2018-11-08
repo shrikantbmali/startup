@@ -1,0 +1,38 @@
+﻿<controls:MetroWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+					  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					  xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+					  mc:Ignorable="d"
+					  x:Class="MovieManager.Shell"
+					  Title="Shell"
+					  MinWidth="1024"
+					  MinHeight="768"
+					  WindowState="Maximized"
+					  d:DesignWidth="1024"
+					  d:DesignHeight="768"
+					  BorderBrush="{DynamicResource AccentColorBrush}"
+					  BorderThickness="1"
+					  WindowStartupLocation="CenterScreen">
+	<controls:MetroWindow.Flyouts>
+		<controls:FlyoutsControl>
+			<controls:Flyout Header="Flyout"
+							 Position="Right"
+							 Width="200">
+				<Grid Background="Red"></Grid>
+			</controls:Flyout>
+		</controls:FlyoutsControl>
+	</controls:MetroWindow.Flyouts>
+	<Grid>
+
+		<controls:TransitioningContentControl x:Name="CenterDialog"
+											  Width="640"
+											  Height="480"
+											  HorizontalAlignment="Center"
+											  Transition="Normal"
+											  VerticalAlignment="Center" />
+
+		<controls:TransitioningContentControl Transition="LeftReplace"
+											  x:Name="Fill" />
+	</Grid>
+</controls:MetroWindow>

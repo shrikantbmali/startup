@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMF", "DMF\DMF.csproj", "{9C8D99AA-C5DF-441A-9DA2-843174413B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMF.UIInteraction", "DMF.UIInteraction\DMF.UIInteraction.csproj", "{57F0F9A1-2EC1-49A9-8E9B-565733C3A1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMF.Core", "DMF.Core\DMF.Core.csproj", "{BEFA4B01-5A8F-4CE9-8CE8-3BAB1910944A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DMF\\DMF.csproj
+		SccProjectName1 = DMF
+		SccLocalPath1 = DMF
+		SccProjectUniqueName2 = DMF.UIInteraction\\DMF.UIInteraction.csproj
+		SccProjectName2 = DMF.UIInteraction
+		SccLocalPath2 = DMF.UIInteraction
+		SccProjectUniqueName3 = DMF.Core\\DMF.Core.csproj
+		SccProjectName3 = DMF.Core
+		SccLocalPath3 = DMF.Core
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C8D99AA-C5DF-441A-9DA2-843174413B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8D99AA-C5DF-441A-9DA2-843174413B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8D99AA-C5DF-441A-9DA2-843174413B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8D99AA-C5DF-441A-9DA2-843174413B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F0F9A1-2EC1-49A9-8E9B-565733C3A1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F0F9A1-2EC1-49A9-8E9B-565733C3A1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F0F9A1-2EC1-49A9-8E9B-565733C3A1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F0F9A1-2EC1-49A9-8E9B-565733C3A1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFA4B01-5A8F-4CE9-8CE8-3BAB1910944A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFA4B01-5A8F-4CE9-8CE8-3BAB1910944A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFA4B01-5A8F-4CE9-8CE8-3BAB1910944A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFA4B01-5A8F-4CE9-8CE8-3BAB1910944A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

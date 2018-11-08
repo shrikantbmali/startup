@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="MovieManager.Views.AddRemoveFoldersView"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:interaction="clr-namespace:MovieManager.Interaction;assembly=MovieManager.Interaction"
+			 xmlns:customControls="clr-namespace:MovieManager.CustomControls"
+			 xmlns:infra="clr-namespace:System.Common.Dialogs;assembly=System.Common"
+			 mc:Ignorable="d"
+			 d:DesignHeight="240 "
+			 d:DesignWidth="320"
+			 x:ClassModifier="internal"
+			 d:DataContext="{d:DesignInstance interaction:IAddRemoveFolderVM, IsDesignTimeCreatable=False }">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="20" />
+		</Grid.RowDefinitions>
+		<ListBox Grid.Row="0"
+				 ItemsSource="{Binding Locations}"
+				 HorizontalContentAlignment="Stretch"
+				 x:Name="ListBox"
+				 x:FieldModifier="private">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid Height="35"
+						  x:Name="listBoxGrid"
+						  Tag="{Binding Id}">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="{Binding Path}"
+								   FontSize="16"
+								   HorizontalAlignment="Left"
+								   VerticalAlignment="Center" />
+						<CheckBox Grid.Column="1"
+								  IsChecked="{Binding IsToMonitor, Mode=TwoWay}"
+								  HorizontalAlignment="Stretch"
+								  VerticalAlignment="Stretch" />
+						<Button Grid.Column="2"
+								Content="X"
+								DataContext="{Binding ElementName=ListBox, Path=DataContext}"
+								Height="{Binding ElementName=listBoxGrid, Path=ActualHeight}"
+								Width="{Binding ElementName=listBoxGrid, Path=ActualHeight}"
+								Command="{Binding RemoveLocationCommand}"
+								CommandParameter="{Binding ElementName=listBoxGrid, Path=Tag}"
+								FontSize="16" />
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Button Content="Add"
+					Height="30"
+					VerticalAlignment="Bottom"
+					Command="{Binding AddLocationCommand}" />
+			<Button Grid.Column="1"
+					Content="Cancel"
+					Height="30"
+					VerticalAlignment="Bottom"
+					Command="{Binding CloseCommand}"
+					CommandParameter="{x:Static infra:DialogResult.Cancel}" />
+			<Button Grid.Column="2"
+					Content="OK"
+					Height="30"
+					VerticalAlignment="Bottom"
+					Command="{Binding CloseCommand}"
+					CommandParameter="{x:Static infra:DialogResult.OK}" />
+		</Grid>
+		<customControls:CustomStatusBar Grid.Row="2"
+										DataContext="{Binding Status}"
+										Status="{Binding StatusString}"
+										IsIndeterminate="{Binding IsIndeterminate}"
+										ProgressPercentage="{Binding ProgressPercentage}" />
+	</Grid>
+</UserControl>

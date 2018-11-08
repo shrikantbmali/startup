@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LMDB_1" Class="LMDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SAM-PC\SQLEXPRESS;Initial Catalog=LMDB_1;Integrated Security=True" SettingsObjectName="MovieManager.ContextModel.Properties.Settings" SettingsPropertyName="LMDB_1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl_MediaLocations" Member="Tbl_MediaLocations">
+    <Type Name="Tbl_MediaLocation">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="IsToMonitor" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_MediaLocation_Tbl_MediaItem" Member="Tbl_MediaItems" ThisKey="Id" OtherKey="MediaLocationId" Type="Tbl_MediaItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_MediaItems" Member="Tbl_MediaItems">
+    <Type Name="Tbl_MediaItem">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MediaLocationId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_MediaLocation_Tbl_MediaItem" Member="Tbl_MediaLocation" ThisKey="MediaLocationId" OtherKey="Id" Type="Tbl_MediaLocation" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_ApplicationSettings" Member="Tbl_ApplicationSettings">
+    <Type Name="Tbl_ApplicationSetting">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsMediaLocationSetup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDefaultSettings" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

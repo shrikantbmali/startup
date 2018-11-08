@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LMDB">
+  <DataContextMoniker Name="/LMDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ebd67999-b816-434d-b413-5c6752ea660f" absoluteBounds="0.75, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LMDBDataContext/Tbl_MediaLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="716a1a1a-d1b7-4e67-818b-eeeed5f8ecd0" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6a46214-cbb3-4767-a25e-b7a001ff2d6b" absoluteBounds="3.5, 0.875, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/LMDBDataContext/Tbl_MediaItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="080d4c11-d076-4d48-a2b8-422e0b22c91b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.69314697265625); (3.5 : 1.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LMDBDataContext/Tbl_MediaLocation/Tbl_MediaLocation_Tbl_MediaItem" />
+      <nodes>
+        <classShapeMoniker Id="ebd67999-b816-434d-b413-5c6752ea660f" />
+        <classShapeMoniker Id="e6a46214-cbb3-4767-a25e-b7a001ff2d6b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="675394fa-5adc-4e5e-a2e7-ec70d82fdf92" absoluteBounds="0.875, 2.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LMDBDataContext/Tbl_ApplicationSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a644ee1-053f-44fa-99a7-b0be3cc40600" absoluteBounds="0.88999999999999968, 3.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

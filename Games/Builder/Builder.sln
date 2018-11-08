@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.Core", "Builder.Core\Builder.Core.csproj", "{E427D0AA-DB37-4607-A129-F9563804765E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supportings", "Supportings", "{5E5778BF-4EDA-47B4-8D90-AC7DB600C583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Infrastructure", "..\..\..\Utilities\System\System.Infrastructure\System.Infrastructure.csproj", "{077597BB-E9E3-4811-A7CD-EC03090CDCFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Mvvm", "..\..\..\Utilities\System\System.Mvvm\System.Mvvm.csproj", "{49B662DD-2853-40A6-AF29-9FE9B214F3E9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Builder.Core\\Builder.Core.csproj
+		SccProjectName1 = Builder.Core
+		SccLocalPath1 = Builder.Core
+		SccProjectUniqueName2 = ..\\..\\..\\Utilities\\System\\System.Infrastructure\\System.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName2 = Builder.sln
+		SccProjectName2 = ../../../Utilities/System/System.Infrastructure
+		SccLocalPath2 = ..\\..\\..\\Utilities\\System\\System.Infrastructure
+		SccProjectUniqueName3 = ..\\..\\..\\Utilities\\System\\System.Mvvm\\System.Mvvm.csproj
+		SccProjectTopLevelParentUniqueName3 = Builder.sln
+		SccProjectName3 = ../../../Utilities/System/System.Mvvm
+		SccLocalPath3 = ..\\..\\..\\Utilities\\System\\System.Mvvm
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E427D0AA-DB37-4607-A129-F9563804765E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E427D0AA-DB37-4607-A129-F9563804765E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E427D0AA-DB37-4607-A129-F9563804765E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E427D0AA-DB37-4607-A129-F9563804765E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD} = {5E5778BF-4EDA-47B4-8D90-AC7DB600C583}
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9} = {5E5778BF-4EDA-47B4-8D90-AC7DB600C583}
+	EndGlobalSection
+EndGlobal

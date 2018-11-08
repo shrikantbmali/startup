@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="MovieManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MovieManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF498EE2">
+    <SplitView HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="1280"
+               DisplayMode="CompactOverlay" IsPaneOpen="{Binding Path=IsChecked, ElementName=toggleButton}">
+        <SplitView.Pane>
+            <StackPanel Background="#F8555555">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Symbol="Setting " ></SymbolIcon>
+                </StackPanel>
+            </StackPanel>
+        </SplitView.Pane>
+        <Grid>
+            <ToggleButton x:Name="toggleButton" Content="ToggleButton"
+                          HorizontalAlignment="Left" Margin="825,186,0,0" VerticalAlignment="Top" />
+            <RelativePanel HorizontalAlignment="Left" Height="100" Margin="1514,388,-382,0" VerticalAlignment="Top" Width="100" />
+        </Grid>
+    </SplitView>
+</Page>

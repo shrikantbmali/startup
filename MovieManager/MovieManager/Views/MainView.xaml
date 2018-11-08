@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="MovieManager.Views.MainView"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:interaction="clr-namespace:MovieManager.Interaction;assembly=MovieManager.Interaction"
+			 xmlns:converters="clr-namespace:MovieManager.Converters"
+			 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+			 x:ClassModifier="internal"
+			 x:Name="UserControl"
+			 x:FieldModifier="private"
+			 mc:Ignorable="d"
+			 d:DesignHeight="369"
+			 d:DesignWidth="462"
+			 d:DataContext="{d:DesignInstance interaction:IMainVM, IsDesignTimeCreatable=False }">
+
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Loaded">
+			<i:InvokeCommandAction Command="{Binding OnLoadCommand}" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+
+	<UserControl.Resources>
+		<converters:MediaItemPathToThumnailConverter x:Key="ItemPathToThumnailConverter" />
+	</UserControl.Resources>
+	<DockPanel>
+		<Grid DockPanel.Dock="Top"
+			  Height="25"></Grid>
+		<StackPanel DockPanel.Dock="Left"
+					Width="200">
+			<ListBox Background="Transparent">
+				<ListBoxItem Content="All" />
+				<ListBoxItem Content="Movies" />
+				<ListBoxItem Content="TV Serials" />
+				<ListBoxItem Content="Documentries" />
+			</ListBox>
+		</StackPanel>
+		<Grid DockPanel.Dock="Right"
+			  Margin="5,5,0,0">
+			<ListView Background="Transparent"
+					  BorderThickness="0"
+					  SnapsToDevicePixels="true"
+					  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+					  ItemsSource="{Binding AllItems}"
+					  VirtualizingPanel.VirtualizationMode="Recycling">
+				<ListView.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel ItemHeight="280"
+								   ItemWidth="160"
+								   IsItemsHost="True">
+						</WrapPanel>
+					</ItemsPanelTemplate>
+				</ListView.ItemsPanel>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<Grid Background="#01111111">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="240" />
+								<RowDefinition Height="40" />
+							</Grid.RowDefinitions>
+							<Image Margin="0,2,0,0"
+								   Grid.Row="0"
+								   Source="../Resources/Dummy.jpg"
+								   Stretch="Uniform"
+								   Width="158" />
+							<TextBlock Grid.Row="1"
+									   Text="{Binding Name}"
+									   TextTrimming="WordEllipsis"
+									   TextWrapping="Wrap"
+									   Background="Transparent"
+									   VerticalAlignment="Bottom"
+									   Margin="2,0,2,0" />
+							<Button Grid.Row="0"
+									Height="45"
+									Width="45"
+									HorizontalAlignment="Right"
+									VerticalAlignment="Bottom"
+									Opacity="0"
+									Margin="5"
+									x:Name="Button"
+									Command="{Binding ElementName=UserControl, Path=DataContext.PlayCommand}"
+									CommandParameter="{Binding Id}">
+								<Path Width="40"
+									  Height="40"
+									  Stretch="Uniform"
+									  Fill="{DynamicResource AccentColorBrush}"
+									  Data="F1 M 24.4815,12.6728L 9.98462,19.9692L 9.98462,5.37634L 24.4815,12.6728 Z M 3.02417,0C 1.03207,-0.119995 0.0240173,0.888062 0,3.0242L 0,22.2734C 0.0240173,24.2895 1.03207,25.2975 3.02417,25.2975L 29.4738,25.2975C 31.5779,25.2975 32.602,24.2895 32.546,22.2734L 32.546,3.0242C 32.602,0.960083 31.5779,-0.0480042 29.4738,0L 3.02417,0 Z " />
+							</Button>
+							<Grid.Triggers>
+								<EventTrigger RoutedEvent="Control.MouseEnter">
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.125"
+															 To="1"
+															 Storyboard.TargetProperty="Opacity"
+															 Storyboard.TargetName="Button" />
+										</Storyboard>
+									</BeginStoryboard>
+								</EventTrigger>
+								<EventTrigger RoutedEvent="Control.MouseLeave">
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.125"
+															 To="0"
+															 Storyboard.TargetName="Button"
+															 Storyboard.TargetProperty="Opacity" />
+										</Storyboard>
+									</BeginStoryboard>
+								</EventTrigger>
+							</Grid.Triggers>
+						</Grid>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</Grid>
+	</DockPanel>
+</UserControl>

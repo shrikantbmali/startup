@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:PropertiesEditor.Controls;assembly=PropertiesEditor"
+        xmlns:wpfDemo="clr-namespace:PropertiesEditor.WPFDemo"
+        x:Class="PropertiesEditor.WPFDemo.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+	<Grid>
+
+		<Controls:PropertiesEditor HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="498"
+								   PropertyOwnerType="{x:Type wpfDemo:DemoPropertyClass}"/>
+
+	</Grid>
+</Window>

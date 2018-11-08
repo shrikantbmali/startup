@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTorrent", "MyTorrent\MyTorrent.csproj", "{D4FD8FF5-2E58-4E97-AC0A-C1547BE565F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTorrent.Core", "MyTorrent.Core\MyTorrent.Core.csproj", "{9EC12E94-0C2E-4A1C-8E47-14941C276E6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting", "Supporting", "{2D7AEA68-714F-4B94-B20F-3EAD6DAFC7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Infrastructure", "Supportings\System.Infrastructure\System.Infrastructure.csproj", "{077597BB-E9E3-4811-A7CD-EC03090CDCFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Mvvm", "Supportings\System.Mvvm\System.Mvvm.csproj", "{49B662DD-2853-40A6-AF29-9FE9B214F3E9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyTorrent\\MyTorrent.csproj
+		SccProjectName1 = MyTorrent
+		SccLocalPath1 = MyTorrent
+		SccProjectUniqueName2 = MyTorrent.Core\\MyTorrent.Core.csproj
+		SccProjectName2 = MyTorrent.Core
+		SccLocalPath2 = MyTorrent.Core
+		SccProjectUniqueName3 = Supportings\\System.Infrastructure\\System.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName3 = MyTorrent.sln
+		SccProjectName3 = ../../Utilities/System/System.Infrastructure
+		SccLocalPath3 = Supportings\\System.Infrastructure
+		SccProjectUniqueName4 = Supportings\\System.Mvvm\\System.Mvvm.csproj
+		SccProjectTopLevelParentUniqueName4 = MyTorrent.sln
+		SccProjectName4 = ../../Utilities/System/System.Mvvm
+		SccLocalPath4 = Supportings\\System.Mvvm
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4FD8FF5-2E58-4E97-AC0A-C1547BE565F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4FD8FF5-2E58-4E97-AC0A-C1547BE565F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4FD8FF5-2E58-4E97-AC0A-C1547BE565F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4FD8FF5-2E58-4E97-AC0A-C1547BE565F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC12E94-0C2E-4A1C-8E47-14941C276E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC12E94-0C2E-4A1C-8E47-14941C276E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC12E94-0C2E-4A1C-8E47-14941C276E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC12E94-0C2E-4A1C-8E47-14941C276E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD} = {2D7AEA68-714F-4B94-B20F-3EAD6DAFC7F1}
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9} = {2D7AEA68-714F-4B94-B20F-3EAD6DAFC7F1}
+	EndGlobalSection
+EndGlobal

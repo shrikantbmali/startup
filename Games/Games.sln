@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AFCE925E-21C4-4BEE-A70B-200CFF042FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarromCore", "CarromCore\CarromCore.csproj", "{1573F4B0-A37E-4804-9B2C-DD88D628B1A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarromCore.Tests", "Tests\CarromCore.Tests\CarromCore.Tests.csproj", "{67DEA9AF-5F20-4317-A573-655AADFAAA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Common", "Games.Common\Games.Common.csproj", "{6B503DCD-152D-409C-8E56-6DAF41AE1883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Common.Tests", "Tests\Games.Common.Tests\Games.Common.Tests.csproj", "{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CarromCore\\CarromCore.csproj
+		SccProjectName1 = CarromCore
+		SccLocalPath1 = CarromCore
+		SccProjectUniqueName2 = Tests\\CarromCore.Tests\\CarromCore.Tests.csproj
+		SccProjectTopLevelParentUniqueName2 = Games.sln
+		SccProjectName2 = Tests/CarromCore.Tests
+		SccLocalPath2 = Tests\\CarromCore.Tests
+		SccProjectUniqueName3 = Games.Common\\Games.Common.csproj
+		SccProjectName3 = Games.Common
+		SccLocalPath3 = Games.Common
+		SccProjectUniqueName4 = Tests\\Games.Common.Tests\\Games.Common.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = Games.sln
+		SccProjectName4 = Tests/Games.Common.Tests
+		SccLocalPath4 = Tests\\Games.Common.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1573F4B0-A37E-4804-9B2C-DD88D628B1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1573F4B0-A37E-4804-9B2C-DD88D628B1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1573F4B0-A37E-4804-9B2C-DD88D628B1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1573F4B0-A37E-4804-9B2C-DD88D628B1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DEA9AF-5F20-4317-A573-655AADFAAA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DEA9AF-5F20-4317-A573-655AADFAAA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DEA9AF-5F20-4317-A573-655AADFAAA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DEA9AF-5F20-4317-A573-655AADFAAA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B503DCD-152D-409C-8E56-6DAF41AE1883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B503DCD-152D-409C-8E56-6DAF41AE1883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B503DCD-152D-409C-8E56-6DAF41AE1883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B503DCD-152D-409C-8E56-6DAF41AE1883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67DEA9AF-5F20-4317-A573-655AADFAAA74} = {AFCE925E-21C4-4BEE-A70B-200CFF042FE6}
+		{C236E5C2-CC36-41C2-87ED-A09D7E6D53C7} = {AFCE925E-21C4-4BEE-A70B-200CFF042FE6}
+	EndGlobalSection
+EndGlobal
